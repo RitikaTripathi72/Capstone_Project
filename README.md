@@ -48,6 +48,17 @@ This project demonstrates:
 3. Restrict the visibility of selected songs from users.  
 4. Send notifications whenever a new song is added (email alerts).
 
+# Each microservice:
+- Has its own controller, service, repository, and database  
+- Communicates independently  
+- Uses JWT for authentication  
+
+---
+# 🔐 Authentication Flow (JWT)
+
+1. User/Admin logs in → JWT issued  
+2. JWT added to Authorization header for every request  
+3. Spring Security validates token in filter  
 # 🧪 Technologies Used
 
 | Layer | Technologies |
@@ -57,3 +68,8 @@ This project demonstrates:
 | Communication | REST APIs |
 | Notifications | JavaMailSender |
 | Frontend | HTML, CSS, JSP, Fetch API |
+
+# 📝 Author
+
+**Ritika Tripathi**  
+📧 Email: ritikatripathi164@gmail.com
